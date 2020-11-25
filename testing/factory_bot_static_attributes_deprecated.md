@@ -18,19 +18,19 @@ factory :robot do
 end
 ```
 
-With *dynamic*, every time you build a new `:robot` instance, you will get a new
+With **dynamic**, every time you build a new `:robot` instance, you will get a new
 "Ralph" string for the `name`.
 
-With *static*, you will always get the same string object in memory.  If the
+With **static**, you will always get the same string object in memory.  If the
 static string is mutated during a test, it will be mutated for all tests, which
-causes *problems*.
+causes **problems**.
 
 Types of Problems
 -------------------------------------------------------------------------------
 * If an attribute is updated it will be changed for all instances of that
   factory.
 * Time attributes, eg: `Time.now`, can be particularly confusing.
-* Using persistent _records_ with _static_ attributes can be confusing as well
+* Using persistent **records* with **static** attributes can be confusing as well
   since every instance will be associated with the same persistent record.
 
 ```ruby
