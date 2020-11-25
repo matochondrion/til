@@ -27,7 +27,7 @@ causes *problems*.
 
 Types of Problems
 -------------------------------------------------------------------------------
-* If an object like a `String` is changed once, it will be changed for all
+* If an object, such as a `String`, is changed once, it will be changed for all
   instances of that factory.
 * Time attributes, eg: `Time.now` can be particularly confusing.
 * Using persistent _records_ with _static_ attributes can be confusing as well
