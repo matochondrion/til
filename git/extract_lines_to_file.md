@@ -1,4 +1,4 @@
-# Extract Selected Lines to File With w:
+# Extract selected lines to file with w:
 
 * `shift-v` to visually select some lines
 * `:w path/to/new/file.rb<Enter>` to save those lines to a new file
