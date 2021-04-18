@@ -127,7 +127,8 @@ https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 >
 > There are two ways you can write HTML and CSS:
 >
-> ~~"Separation of Concerns"~~
+> ### Separation of Concerns"
+
 > CSS that depends on HTML.
 >
 > Naming your classes based on your content (like .author-bio) treats your HTML
@@ -142,7 +143,8 @@ https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 >
 > In this model, your HTML is restyleable, but your CSS is not reusable.
 >
-> ~~"Mixing Concerns"~~
+> ### Mixing Concerns
+
 > HTML that depends on CSS.
 >
 > Naming your classes in a content-agnostic way after the repeating patterns in
@@ -160,7 +162,7 @@ https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 > Neither is inherently "wrong"; it's just a decision made based on what's more
 > important to you in a specific context.
 >
-> ~~Choosing reusability~~
+> ### Choosing reusability
 >
 > The turning point for me came when I read Nicolas Gallagher's About HTML
 > semantics and front-end architecture.
@@ -183,12 +185,12 @@ https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 > What if we had another component that needed left-align and right-align
 > modifiers, would we create new component modifiers for that as well?
 >
-> ~~We prefer composition to duplication.~~
+> ### We prefer composition to duplication.
 > So if we had two actions lists, one that needed to be left aligned and
 > another that needed to be right aligned, how could we solve that problem with
 > composition?
 >
-> ~~Alignment utilities~~
+> ### Alignment utilities
 > To solve this problem with composition, we need to be able to add a new
 > reusable class to our component that gives us the desired effect.
 >
@@ -271,7 +273,8 @@ https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 > `.btn-purple` class that bundles up those 7 utilities than it is to commit to
 > templatizing every tiny widget on the site.
 >
-> ~~...but build them using utilities first~~
+> ### but build them using utilities first
+
 > The reason I call the approach I take to CSS utility-first is because I try
 > to build everything I can out of utilities, and only extract repeating
 > patterns as they emerge.
