@@ -144,10 +144,10 @@ most sense to me:
 
 * POROs that simplify Models can go in `app/models/concerns` if they are shared
   among more than one model, or in a namespaced folder related to the model
-  that uses them, `app/models/users/user_poro.rb`.
+  that uses them, `app/models/users/valid.rb`.
+  - ref: https://dev.to/sulmanweb/plain-old-ruby-objects-poros-in-rails-fat-models-3l7f
 * POROs that can be shared among multiple applications or even made into gems
   go in `lib/`
-  - ref: https://dev.to/sulmanweb/plain-old-ruby-objects-poros-in-rails-fat-models-3l7f
 * View/presenter POROs go in the Model's namespace
   - Needs details in TIL
   - ref: http://blog.vladimir-rybas.com/blog/2014/08/15/a-way-to-organize-poros-in-rails/
