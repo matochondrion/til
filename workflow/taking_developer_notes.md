@@ -6,7 +6,7 @@ Taking Developer Notes
 Contents
 --------------------------------------------------------------------------------
 
-* [tNoteTypes] Types of Notes
+* Types of Notes [tNoteTypes]
   - Handwritten
   - Lab Book - Markdown
   - Notes/Development - Markdown
@@ -15,15 +15,15 @@ Contents
   - TIL - Markdown
   - Blog - Markdown
   - Hourly Logs - Handwritten or Markdown
-* [tLogsStyle] Hourly Logs - Handwritten Vs Markdown
-* [tLogsType] Hourly Logs - Interstitial Vs Daily Summary
-* [tDebugging] Debugging and Optimizing
-  - [tDebuggingStrategy] Strategy
-  - [tDebuggingWhat] What to record
-  - [tDebuggingTools] Tools
-* [tMyMethod]
+* Hourly Logs - Handwritten Vs Markdown [tLogsMethod]
+* Debugging and Optimizing [tDebugging]
+  - Strategy [tDebuggingStrategy]
+  - What to record [tDebuggingWhat]
+  - Tools [tDebuggingTools]
+* My Method [tMyMethod]
 
-[tNoteTypes] Types of Notes: Handwritten & Markdown 
+
+Types of Notes: Handwritten & Markdown [tNoteTypes]
 --------------------------------------------------------------------------------
 
 * Handwritten
@@ -118,10 +118,10 @@ source: https://zapier.com/blog/productivity-journal/
   - Helps determine if the activity was important and if it should be repeated
     or avoided
 * Review regularly to maintain awareness and discover TODO items
-* See [tLogsStyle] for pros and cons of Handwritten Vs Digital Hourly Logs
+* See [tLogsMethod] for pros and cons of Handwritten Vs Digital Hourly Logs
 
 
-[tLogsStyle] Hourly Logs - Handwritten Vs Digital
+Hourly Logs - Handwritten Vs Digital [tLogsMethod]
 --------------------------------------------------------------------------------
 
 source: https://www.lifehack.org/895443/log-daily-activities
@@ -145,14 +145,10 @@ source: https://zapier.com/blog/productivity-journal/
   makes updating Status report logs easier since it can be copy and pasted
 
 
-[tLogsType] Hourly Logs - Interstitial Vs Daily Summary
+Debugging and Optimizing [tDebugging]
 --------------------------------------------------------------------------------
 
-
-[tDebugging] Debugging and Optimizing
---------------------------------------------------------------------------------
-
-### [tDebuggingStrategy] Strategy
+### Strategy [tDebuggingStrategy]
 
 Debugging involves gathering data and testinng hypothesis. The key is to take
 notes along the way. This prevents you from repeating what you've already done,
@@ -178,14 +174,14 @@ Making code changes and recording the results:
 
 source: https://blog.nelhage.com/2010/05/software-and-lab-notebooks/ 
 
-### [tDebuggingWhat] What to record
+### What to record [tDebuggingWhat]
 
 * Commands/Actions: code, terminal commands, settings
   - `fc`, `pbcopy`, `pbpaste`
 * Text Output
 * Screenshots
 
-### [tDebuggingTools] Tools
+### Tools [tDebuggingTools]
 
 * `fc`: To retrieve command-line history to record, and compose new commands
 
@@ -201,7 +197,8 @@ fc -e - 15 20 # edit range of line numbers
 # <ctrl-r> interactive searchable list of past commands
 ```
 
-[tMyMethod] My Method
+
+My Method [tMyMethod]
 --------------------------------------------------------------------------------
 
 I use most of the types listed in the "Types of Notes" section. For
