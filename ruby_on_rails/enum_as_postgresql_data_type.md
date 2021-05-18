@@ -19,12 +19,16 @@ Other Tips
   enum values in the Model with a Hash:
 
   ```ruby
+  enum file_type: { pdf: "pdf", xlsx: "xlsx", csv: "csv" }
+  # OR
   enum file_type: { csv: 0, pdf: 1, xlsx: 2 }
   ```
 
 * Use prefixes and suffixes if they help describe the enum values:
 
   ```ruby
+  enum file_type: { pdf: "pdf", xlsx: "xlsx", csv: "csv" }, _suffix: true
+  # OR
   enum file_type: { pdf: 0, csv: 1, xlsx: 2}, _suffix: true
 
   # instance.file_type_pdf?
