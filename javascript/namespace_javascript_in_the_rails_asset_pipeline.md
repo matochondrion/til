@@ -14,7 +14,7 @@ on HTML elements that don't exist.
 
 I'm not sure if there are noticeable performance consequences, and the code
 usually fails silently without side effects. However reducing the clutter in
-the global namespace reduces the changes of code collisions and difficult to
+the global namespace reduces the chances of code collisions and difficult to
 diagnose bugs.
 
 There are numerous namespacing methods for JavaScript. A pattern I currently
