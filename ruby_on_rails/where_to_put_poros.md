@@ -11,8 +11,10 @@ Contents
 * What Are POROs
 * Why Use POROs
 * Types of POROs
+* [t05] Argument Against Service Objects
 * Modules and Concerns vs Classes
 * Namespacing syntax
+* [t08] Namespace Organization
 * Simple Rules For PORO Directory Structure in Rails
 * Testing POROs
 
@@ -110,11 +112,23 @@ for more detailed definitions.
 
 ref: https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models/
 
-Modules and Concerns vs Classes
+
+[t05] Argument For Domain Objects instead of Service Objects
+--------------------------------------------------------------------------------
+
+### Use Domain Obects instead of Service Objects:
+https://www.codewithjason.com/rails-service-objects/
+https://avdi.codes/service-objects/
+
+### Where to put these Non-ActiveRecord models:
+https://stackoverflow.com/questions/16466024/rails-where-directories-to-put-models-that-are-not-active-record
+
+Modules and Concerns vs Composition with Classes
 --------------------------------------------------------------------------------
 
 Only extract modules and concerns if two or more classes share the same
 functionality. Avoid extracting module specific 
+
 
 Namespacing Syntax
 --------------------------------------------------------------------------------
@@ -134,6 +148,61 @@ class User
   end
 end
 ```
+
+[t08] Namespace Organization
+--------------------------------------------------------------------------------
+
+| FILE                                           | CLASS                       |
+|------------------------------------------------|-----------------------------|
+| app/models/project/report.rb                   | Project::Report             |
+| app/helpers/project/report_helper.rb           | Project::ReportHelper       |
+| app/controllers/projects/reports_controller.rb | Projects::ReportsController |
+| app/views/projects/reports/show.html.erb       | View template               |
+
+Use plural namespace name for Controllers for natural nesting of folders.
+
+**GOOD**
+```
+app/
+  views/
+    projects/
+      index.html.erb
+      show.html.erb
+      reports/
+        show.html.erb
+```
+
+**BAD**
+```
+app/
+  views/
+    project/
+      reports/
+        show.html.erb
+    projects/
+      index.html.erb
+      show.html.erb
+```
+
+ref: https://blog.makandra.com/2014/12/organizing-large-rails-projects-with-namespaces/
+
+### Why You Should Not Use a Class as a Namespace in Rails Applications
+
+ref: https://blog.jetbrains.com/ruby/2017/03/why-you-should-not-use-a-class-as-a-namespace-in-rails-applications/
+
+### Namespaced Vs Nested Routes
+
+* ref: https://jarlowrey.com/blog/namespacing-rails-5
+  - Just the part on routes, the rest seems outdated...doesn't address table
+    name prefixes.
+### Scoped Routes
+
+* ref: https://devblast.com/b/namespace-controllers-rails
+
+### Table Name Prefixes
+
+ref: https://bclennox.com/namespaces-in-rails-applications
+
 
 Simple Rules For PORO Directory Structure in Rails
 --------------------------------------------------------------------------------
